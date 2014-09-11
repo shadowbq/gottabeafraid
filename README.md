@@ -39,16 +39,16 @@ Just run irb, silly..
 
 ## Using Tor/Onion
 
-When Onion flag is enabled it will attempt to use a Socks Proxy on 51400 to connect to afraid.org. Note the SSL certificate verification is disabled when doing this. 
+When Onion flag is enabled it will attempt to use a Socks Proxy on 9050 to connect to afraid.org. Note the SSL certificate verification is disabled when doing this. 
 
 ```ruby
-@agent.agent.set_socks('127.0.0.1', 51400)
+@agent.agent.set_socks('127.0.0.1', 9050)
 @agent.agent.http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 ```
 
 It will also attempt to perform a sanity check on your new Tor node IP address.
 
-
+* Query to  "http://checkip.dyndns.org" will be shown asking if you like this external Tor exit node.
 
 ## Contributing
 
